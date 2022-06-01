@@ -22,7 +22,7 @@ public class MainMenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     void RefreshUI()

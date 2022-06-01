@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Prefab/Scenes/MainMenu.unity
+- path: Assets/Prefab/Scenes/Upgrade.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

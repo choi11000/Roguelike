@@ -20,7 +20,7 @@ public class RunningTime : MonoBehaviour
     {
         sec += Time.deltaTime;
         TimerText.text = string.Format("{0:D2}:{1:D2}", min, (int)sec);
-
+        //GameManager.instance.point += 1;
         if ((int)sec > 59)
         {
             sec = 0;

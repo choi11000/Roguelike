@@ -96,7 +96,7 @@ public class LootSystem : MonoBehaviour
                             Circle.Circle_Num = 30;
                         }
 
-                        if (Circle.waitingTime < 0.5f)
+                        if (Circle.waitingTime > 0.5f)
                         {
                             Circle.waitingTime -= 0.2f;
                         }

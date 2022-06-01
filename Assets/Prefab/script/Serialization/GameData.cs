@@ -17,7 +17,7 @@ public class GameData
         totalCoins = 0;
         levels = 1;
         abilitiesUnlocked = new bool[5];
-        abilitiesUnlocked[0] = true;
+        //abilitiesUnlocked[0] = false;
         Settings = 1;
     }
 }
