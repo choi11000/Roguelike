@@ -18,6 +18,21 @@ public class Basic_Auto_Shot : MonoBehaviour
     [SerializeField]
     public float SpellDamage = 50f;
     private int FBall_Num = 360;
+    public GameData gameData;
+
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[0])
+        {
+            SpellDamage += 2f;
+
+        }
+        if (gameData.abilitiesUnlocked[1])
+        {
+            waitingTime -= 0.01f;
+        }
+    }
 
     void Start()
     {

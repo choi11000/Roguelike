@@ -14,7 +14,21 @@ public class CircleShot : MonoBehaviour
     [SerializeField]
     public float SpellDamage = 5f;
     public int Circle_Num = 60;
+    public GameData gameData;
 
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[0])
+        {
+            SpellDamage += 2f;
+
+        }
+        if (gameData.abilitiesUnlocked[1])
+        {
+            waitingTime -= 0.01f;
+        }
+    }
     void Start()
     {
         timer = 0.0f;

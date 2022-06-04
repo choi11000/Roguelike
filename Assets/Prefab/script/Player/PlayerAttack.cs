@@ -127,7 +127,6 @@ public class PlayerAttack : MonoBehaviour
         Mage.isDie = true;
         hitBoxCollider.SetActive(false);
         Debug.Log("Player Die");
-        
     }
     void isHitReset()
     {

@@ -38,9 +38,13 @@ public class Shop : MonoBehaviour
             g.transform.GetChild(1).GetChild(0).GetComponent<Text>().text = ShopItemsList[i].Price.ToString();
             g.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ShopItemsList[i].Con.ToString();
             buyBtn = g.transform.GetChild(2).GetComponent<Button>();
-            buyBtn.interactable = !GameManager.instance.abilities[i];
+            buyBtn.interactable = GameManager.instance.abilities[i];
             //gameData.abilitiesUnlocked[i] = !GameManager.instance.abilities[i];
-            buyBtn.AddEventListener(i, OnShopItemBtnClicked);
+            
+            if ((gameData.totalCoins - ShopItemsList[i].Price) > 0)
+            {
+                buyBtn.AddEventListener(i, OnShopItemBtnClicked);
+            }
         }
         Destroy(ItemTemplate);
     }
@@ -51,6 +55,7 @@ public class Shop : MonoBehaviour
         ShopItemsList[itemIndex].IsPurchased = true;
         //기록
         gameData.abilitiesUnlocked[itemIndex] = ShopItemsList[itemIndex].IsPurchased;
+        
         gameData.totalCoins -= ShopItemsList[itemIndex].Price;
         mainMenuManager.uicoins.text = gameData.totalCoins.ToString();
         GameManager.instance.abilities[itemIndex] = ShopItemsList[itemIndex].IsPurchased;

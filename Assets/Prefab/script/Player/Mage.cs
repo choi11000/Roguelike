@@ -18,9 +18,17 @@ public class Mage : MonoBehaviour
     private float m_delayToIdle = 0.0f;
     public bool isHit;
     public bool isDie = true;
+    public GameData gameData;
     //public GameObject monster;
-    
 
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[3])
+        {
+            m_speed += 1f;
+        }
+    }
     // Use this for initialization
     void Start()
     {

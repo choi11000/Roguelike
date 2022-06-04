@@ -7,10 +7,19 @@ using System;
 public class PlayerHealth : MonoBehaviour
 {
     public static float health = 0f;
-    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] public float maxHealth = 100f;
     public Image healthBar;
     public static event Action OnPlayerDeath;
+    public GameData gameData;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[2])
+        {
+            maxHealth += 10;
+        }
+    }
     private void Start()
     {
         health = maxHealth;

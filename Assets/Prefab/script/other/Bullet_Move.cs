@@ -6,6 +6,15 @@ public class Bullet_Move : MonoBehaviour {
 
     public float speed = 10f;
     PlayerExp Exp;
+    public GameData gameData;
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[4])
+        {
+            speed += 1;
+        }
+    }
     private void Start()
     {
         //생성으로부터 2초 후 삭제

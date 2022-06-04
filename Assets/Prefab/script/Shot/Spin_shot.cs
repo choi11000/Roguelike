@@ -17,7 +17,17 @@ public class Spin_shot : MonoBehaviour {
     public float waitingTime = 0.5f;
     [SerializeField]
     public float SpellDamage = 5f;
+    public GameData gameData;
 
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+        if (gameData.abilitiesUnlocked[0])
+        {
+            SpellDamage += 2f;
+
+        }
+    }
     void Start()
     {
         timer = 0.0f;

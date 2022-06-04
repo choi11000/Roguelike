@@ -18,6 +18,7 @@ public class PlayerExp : MonoBehaviour
     Basic_Auto_Shot Basic;
     Mage mage;
     // Start is called before the first frame update
+
     private void Start()
     {
         ExpBar = GetComponent<Image>();
