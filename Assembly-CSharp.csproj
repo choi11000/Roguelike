@@ -97,6 +97,7 @@
     <Compile Include="Assets\Prefab\script\UI\Colletion1.cs" />
     <Compile Include="Assets\Prefab\script\UI\Gameover.cs" />
     <Compile Include="Assets\Prefab\script\UI\HowToPlay.cs" />
+    <Compile Include="Assets\Prefab\script\UI\JoyStickMovement.cs" />
     <Compile Include="Assets\Prefab\script\UI\Level.cs" />
     <Compile Include="Assets\Prefab\script\UI\MainCoin.cs" />
     <Compile Include="Assets\Prefab\script\UI\MainMenu.cs" />

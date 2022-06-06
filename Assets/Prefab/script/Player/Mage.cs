@@ -20,6 +20,7 @@ public class Mage : MonoBehaviour
     public bool isDie = true;
     public GameData gameData;
     [SerializeField] private bl_Joystick Joystick;
+    //[SerializeField] private JoyStickMovement Joystick;
     //public GameObject monster;
 
     private void Awake()
