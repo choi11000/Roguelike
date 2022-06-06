@@ -122,7 +122,7 @@ public class Basic_Auto_Shot : MonoBehaviour
             {
                 float distance = Vector3.Distance(enemySpawn.EnemyList[i].transform.position, transform.position);
 
-                if (distance <= 7.0f && distance <= closestDistSqr)
+                if (distance <= 15.0f && distance <= closestDistSqr)
                 {
                     closestDistSqr = distance;
                     target = enemySpawn.EnemyList[i].transform;

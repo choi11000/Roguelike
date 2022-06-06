@@ -48,6 +48,11 @@ MonoBehaviour:
   waitingTime: 2
   SpellDamage: 5
   Circle_Num: 60
+  gameData:
+    totalCoins: 0
+    levels: 1
+    abilitiesUnlocked: 0000000000
+    Settings: 1
 --- !u!1 &4702313539419981962
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +132,11 @@ MonoBehaviour:
   waitingTime: 2
   SpellDamage: 10
   FBall_Num: 180
+  gameData:
+    totalCoins: 0
+    levels: 1
+    abilitiesUnlocked: 0000000000
+    Settings: 1
 --- !u!1 &4702313540297870204
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,11 +313,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0286615897771be45850a93bdca5f373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 4
+  m_speed: 3
   m_animator: {fileID: 4702313540297870199}
   m_body2d: {fileID: 4702313540297870201}
   isHit: 0
   isDie: 0
+  gameData:
+    totalCoins: 0
+    levels: 1
+    abilitiesUnlocked: 0000000000
+    Settings: 1
+  Joystick: {fileID: 0}
 --- !u!114 &4702313540297870196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +777,11 @@ MonoBehaviour:
   bullet: {fileID: 8501221719724332035, guid: dcc7abd25dc73f646b701829fca259e0, type: 3}
   waitingTime: 2
   SpellDamage: 5
+  gameData:
+    totalCoins: 0
+    levels: 1
+    abilitiesUnlocked: 0000000000
+    Settings: 1
 --- !u!1 &8881246747738488998
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,4 +830,8 @@ MonoBehaviour:
   bullet: {fileID: 522788624495224719, guid: f45e10f3435416e47ace3ab74f433fea, type: 3}
   waitingTime: 2
   SpellDamage: 50
-  FBall_Num: 360
+  gameData:
+    totalCoins: 0
+    levels: 1
+    abilitiesUnlocked: 0000000000
+    Settings: 1

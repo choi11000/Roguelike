@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mage : MonoBehaviour
 {
-    [SerializeField] public float m_speed = 4.0f;
+    [SerializeField] public float m_speed = 1.0f;
 
     
 
@@ -19,6 +19,7 @@ public class Mage : MonoBehaviour
     public bool isHit;
     public bool isDie = true;
     public GameData gameData;
+    [SerializeField] private bl_Joystick Joystick;
     //public GameObject monster;
 
     private void Awake()
@@ -26,7 +27,7 @@ public class Mage : MonoBehaviour
         gameData = SaveSystem.Load();
         if (gameData.abilitiesUnlocked[3])
         {
-            m_speed += 1f;
+            m_speed += 0.01f;
         }
     }
     // Use this for initialization
@@ -115,8 +116,11 @@ public class Mage : MonoBehaviour
 
     void PlayerAnim()
     {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        //float inputX = Input.GetAxis("Horizontal");
+        //float inputY = Input.GetAxis("Vertical");
+        float inputX = Joystick.Horizontal;
+        float inputY = Joystick.Vertical;
+
         if (!IsPlayingAnim("hurt") && !IsPlayingAnim("Die"))
         {
             //Run
@@ -160,6 +164,9 @@ public class Mage : MonoBehaviour
 
             // Move
             m_body2d.velocity = new Vector2(inputX * m_speed, inputY * m_speed);
+
+            //Vector2 translate = (new Vector2(h, v) * Time.deltaTime) * m_speed/5;
+            //transform.Translate(translate);
         }
         
     }    

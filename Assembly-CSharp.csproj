@@ -106,6 +106,8 @@
     <Compile Include="Assets\Prefab\script\UI\RunningTime.cs" />
     <Compile Include="Assets\Prefab\script\UI\UIManager.cs" />
     <Compile Include="Assets\Prefab\script\UI\Upgrade.cs" />
+    <Compile Include="Assets\Prefab\script\UI\bl_Joystick.cs" />
+    <Compile Include="Assets\Prefab\script\UI\bl_JoystickUtils.cs" />
     <Compile Include="Assets\Prefab\script\other\Bullet_Move.cs" />
     <Compile Include="Assets\Prefab\script\other\See_Player.cs" />
     <Compile Include="Assets\Prefab\script\shop\ButtonExtension.cs" />
