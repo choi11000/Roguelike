@@ -42,7 +42,7 @@ public class PlayerExp : MonoBehaviour
         if (exp >= MaxExp)
         {
             exp = 0;
-            MaxExp += 15;
+            MaxExp += 50;
             Level.level += 1;
             LevelUpdate();
         }
