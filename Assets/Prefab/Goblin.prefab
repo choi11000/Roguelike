@@ -130,7 +130,6 @@ MonoBehaviour:
   health: 0
   itemDropManager: {fileID: 8332976236118308540}
   timer: 5
-  maxHealth: 10
   moveSpeed: 1
   contactDistance: 0.5
   attackSpeed: 1
@@ -171,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToSpawn:
   - item: {fileID: 6961597952110607159, guid: 3ddd73e79bf42dd40bd6f992f793198b, type: 3}
-    spawnRate: 10
+    spawnRate: 1
     minSpawnProb: 0
     maxSpawnProb: 100
   enemy: {fileID: 8332976236118308536}

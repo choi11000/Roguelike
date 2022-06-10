@@ -58,14 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\CameraResolution.cs" />
     <Compile Include="Assets\Prefab\Icon\GetItem.cs" />
-    <Compile Include="Assets\Prefab\script\DataController.cs" />
-    <Compile Include="Assets\Prefab\script\Enemy.cs" />
-    <Compile Include="Assets\Prefab\script\EnemySpawn.cs" />
+    <Compile Include="Assets\Prefab\script\Circle\ButtonExtension.cs" />
+    <Compile Include="Assets\Prefab\script\Circle\Shop.cs" />
+    <Compile Include="Assets\Prefab\script\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Prefab\script\Enemy\EnemySpawn.cs" />
     <Compile Include="Assets\Prefab\script\FollowPlayer.cs" />
-    <Compile Include="Assets\Prefab\script\GameController.cs" />
     <Compile Include="Assets\Prefab\script\GameManager.cs" />
     <Compile Include="Assets\Prefab\script\Hpbar_Control.cs" />
-    <Compile Include="Assets\Prefab\script\IInteractable.cs" />
     <Compile Include="Assets\Prefab\script\Item\ItemDropManager.cs" />
     <Compile Include="Assets\Prefab\script\Item\LootSystem.cs" />
     <Compile Include="Assets\Prefab\script\Player\DestroyEvent_Mage.cs" />
@@ -73,10 +72,7 @@
     <Compile Include="Assets\Prefab\script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Prefab\script\Player\PlayerExp.cs" />
     <Compile Include="Assets\Prefab\script\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\Prefab\script\Sensor_Mage.cs" />
-    <Compile Include="Assets\Prefab\script\Serialization\2\PlayerProfile.cs" />
-    <Compile Include="Assets\Prefab\script\Serialization\2\SaveData.cs" />
-    <Compile Include="Assets\Prefab\script\Serialization\2\SerializationManager.cs" />
+    <Compile Include="Assets\Prefab\script\Player\Sensor_Mage.cs" />
     <Compile Include="Assets\Prefab\script\Serialization\GameData.cs" />
     <Compile Include="Assets\Prefab\script\Serialization\MainMenuManager.cs" />
     <Compile Include="Assets\Prefab\script\Serialization\SaveSystem.cs" />
@@ -91,8 +87,6 @@
     <Compile Include="Assets\Prefab\script\Shot\ToDamage\AutoToDamage.cs" />
     <Compile Include="Assets\Prefab\script\Shot\ToDamage\ToDamage.cs" />
     <Compile Include="Assets\Prefab\script\Shot\heart_shot.cs" />
-    <Compile Include="Assets\Prefab\script\Text\Fader.cs" />
-    <Compile Include="Assets\Prefab\script\Text\LevelFader.cs" />
     <Compile Include="Assets\Prefab\script\UI\Colletion.cs" />
     <Compile Include="Assets\Prefab\script\UI\Colletion1.cs" />
     <Compile Include="Assets\Prefab\script\UI\Gameover.cs" />
@@ -106,14 +100,14 @@
     <Compile Include="Assets\Prefab\script\UI\Mission103.cs" />
     <Compile Include="Assets\Prefab\script\UI\Option.cs" />
     <Compile Include="Assets\Prefab\script\UI\RunningTime.cs" />
+    <Compile Include="Assets\Prefab\script\UI\Text\Fader.cs" />
+    <Compile Include="Assets\Prefab\script\UI\Text\LevelFader.cs" />
     <Compile Include="Assets\Prefab\script\UI\UIManager.cs" />
     <Compile Include="Assets\Prefab\script\UI\Upgrade.cs" />
     <Compile Include="Assets\Prefab\script\UI\bl_Joystick.cs" />
     <Compile Include="Assets\Prefab\script\UI\bl_JoystickUtils.cs" />
     <Compile Include="Assets\Prefab\script\other\Bullet_Move.cs" />
     <Compile Include="Assets\Prefab\script\other\See_Player.cs" />
-    <Compile Include="Assets\Prefab\script\shop\ButtonExtension.cs" />
-    <Compile Include="Assets\Prefab\script\shop\Shop.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

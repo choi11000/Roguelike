@@ -192,7 +192,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\uC81C\uC791\uD300 : \uD55C\uC2E0\uB300\uD559\uAD50 ROC TEAM\r\n\uAE30\uD68D
     : \uB958\uB300\uC120\r\n\uBA54\uC778\uD504\uB85C\uADF8\uB798\uBA38 : \uCD5C\uAE30\uBD09\r\n\uC11C\uBE0C\uD504\uB85C\uADF8\uB798\uBA38
-    : \uBC15\uCC2C\uC6C5\nver. 0.5.27"
+    : \uBC15\uCC2C\uC6C5\nver. 0.6.14"
 --- !u!222 &99858380
 CanvasRenderer:
   m_ObjectHideFlags: 0

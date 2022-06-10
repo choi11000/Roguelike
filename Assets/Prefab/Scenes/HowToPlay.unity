@@ -412,8 +412,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC571\uD50C\uB808\uC774\uC5B4\n\uC774\uB3D9 - \uBC29\uD5A5\uD0A4\n\n\uBAA8\uBC14\uC77C\n\uC774\uB3D9
-    - "
+  m_Text: "\uC571\uD50C\uB808\uC774\uC5B4&\uBAA8\uBC14\uC77C \uACF5\uD1B5\n\n\uC774\uB3D9\n\uC6B0\uCE21
+    \uD558\uB2E8\uC758 \uC870\uC774\uC2A4\uD2F1 \uC774\uC6A9"
 --- !u!222 &793609388
 CanvasRenderer:
   m_ObjectHideFlags: 0
